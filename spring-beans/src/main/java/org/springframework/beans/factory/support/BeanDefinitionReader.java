@@ -37,6 +37,8 @@ import org.springframework.lang.Nullable;
  * @since 1.1
  * @see org.springframework.core.io.Resource
  */
+//Bean的解析过程非常复杂，功能被分的很细，因为这里需要被扩展的地方很多，必须保证有足够的灵活性，以应对可能的变化。
+//Bean的解析主要就是对Spring配置文件的解析。这个解析过程主要通过BeanDefinitionReader来完成
 public interface BeanDefinitionReader {
 
 	/**

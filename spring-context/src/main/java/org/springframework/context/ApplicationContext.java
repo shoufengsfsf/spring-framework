@@ -55,6 +55,11 @@ import org.springframework.lang.Nullable;
  * @see org.springframework.beans.factory.BeanFactory
  * @see org.springframework.core.io.ResourceLoader
  */
+//ApplicationContext是Spring提供的一个高级的IOC容器，它除了能够提供IOC容器的基本功能外，还为用户提供了以下的附加服务。
+//从ApplicationContext接口的实现，我们看出其特点：
+//1、支持信息源，可以实现国际化。（实现 MessageSource 接口）
+//2、访问资源。(实现 ResourcePatternResolver 接口，后面章节会讲到)
+//3、支持应用事件。(实现 ApplicationEventPublisher 接口)
 public interface ApplicationContext extends EnvironmentCapable, ListableBeanFactory, HierarchicalBeanFactory,
 		MessageSource, ApplicationEventPublisher, ResourcePatternResolver {
 

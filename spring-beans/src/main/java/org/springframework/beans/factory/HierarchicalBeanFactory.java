@@ -31,6 +31,7 @@ import org.springframework.lang.Nullable;
  * @since 07.07.2003
  * @see org.springframework.beans.factory.config.ConfigurableBeanFactory#setParentBeanFactory
  */
+//HierarchicalBeanFactory 表示的是这些Bean是有继承关系的，也就是每个sBean有可能有父Bean
 public interface HierarchicalBeanFactory extends BeanFactory {
 
 	/**
